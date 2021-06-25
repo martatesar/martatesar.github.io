@@ -1,0 +1,56 @@
+---
+layout: default
+title: Technologies I work with
+description: Virtual reality - VR, augmented reality - AR, mobile applications, WebGL web applications
+featured_image: /images/services/vr.jpg
+---
+
+<section class="hero">
+
+	<div class="hero__image" style="background-image: url({{ page.featured_image | relative_url }})">
+		<div class="hero__overlay"></div>
+	</div>
+
+	<div class="wrap">
+		
+		<h1>Types of applications I can develop for you</h1> 
+		<p>
+			a list of technologies and platforms in which I can create an application for you (virtual reality, augmented reality, mobile 3D applications, web 3D applications).
+		</p>
+		<p>
+			<a href="/contact" class="button button--medium">contact me</a>
+		</p>
+
+		<p>Interested in an <b>interactive 3D application</b>? Contact me via the <a href="/contact" style="color:white">form</a>.</p>
+
+	</div>
+
+</section>
+
+<section class="listing">
+
+	<div class="wrap">
+
+		{% for test in site.technologies reversed %}
+
+		<article class="post">
+
+			<div class="post__image-wrap">
+				<div class="post__image" style="background-image: url({{ test.featured_image | relative_url }})"></div>
+			</div>
+
+			<div class="post__content-wrap">
+				<div class="post__content">
+					<h2 class="post__title"><a href="{{ test.url | relative_url }}">{{ test.title }}</a></h2>
+					<p class="post__subtitle">{{ test.subtitle }}</p>
+					<p class="post__description">{{ test.description }}</p>
+				</div>
+			</div>
+
+		</article>
+
+		{% endfor %}
+
+	</div>
+
+</section>
