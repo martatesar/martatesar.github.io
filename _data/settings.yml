@@ -23,6 +23,8 @@ menu_settings:
       url: '/contact'
     - title: 'FAQ'
       url: '/faq'
+    - title: '[česky]'
+      url: 'https://martintesar.cz'
 
 footer_settings:
   footer_tagline:  3D application developer
